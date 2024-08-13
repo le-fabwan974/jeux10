@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niveau 10 : Enigme</title>
+    <link rel="stylesheet" href="niveau10.css">
+</head>
+<body>
+    <div class="background">
+        <div class="hearts"></div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Niveau 10 : Enigme</h1>
+            <p>Répondez correctement à l'énigme pour passer au niveau suivant !</p>
+        </header>
+
+        <div id="puzzleContainer" class="puzzle-container">
+            <div id="enigme">
+                <p id="question">Quel est mon second nom ?</p>
+                <div id="options">
+                    <button class="option" data-answer="wrong">Zaroff</button>
+                    <button class="option" data-answer="wrong">Marmaduke</button>
+                    <button class="option" data-answer="correct">Almandzo</button>
+                    <button class="option" data-answer="wrong">Fitzgerald</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="resultImage" src="" alt="Résultat">
+                <p id="resultText"></p>
+                <button id="nextLevelButton" style="display:none;">bravo tu as fini mon coeur,recupère t'a récompense!!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="niveau10.js"></script>
+</body>
+</html>
